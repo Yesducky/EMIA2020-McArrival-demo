@@ -1,10 +1,10 @@
 # EMIA2020-McArrival-demo
-Target:
-Simulate McD's app for food ordering.
-Implement different sorting method based on the ordering time or arrival time. Provide reschedule feature.
-Test whether it help reducing the waiting time and improve the serving efficiency.
+### Target: ###
+Simulate McD's app for food ordering.\
+Implement different sorting method based on the ordering time or arrival time. Provide reschedule feature.\
+Test whether it help reducing the waiting time and improve the serving efficiency.\
 
-Enhancement
+### Enhancement ###
 1. New features: Reschedule, Display number of pending orders (User App interface)
 
 ![image](https://github.com/Yesducky/EMIA2020-McArrival-demo/assets/97087621/2620ab1f-454e-47f6-98e6-c88f53879ed5)
