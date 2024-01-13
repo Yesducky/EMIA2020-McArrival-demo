@@ -2,7 +2,7 @@
 ### Target: ###
 Simulate McD's app for food ordering.\
 Implement different sorting method based on the ordering time or arrival time. Provide reschedule feature.\
-Test whether it help reducing the waiting time and improve the serving efficiency.\
+Test whether it help reducing the waiting time and improve the serving efficiency.
 
 ### Enhancement ###
 1. New features: Reschedule, Display number of pending orders (User App interface)\
