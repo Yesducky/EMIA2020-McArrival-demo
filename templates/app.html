@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"  href="{{url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>{{ title }}</title>
+</head>
+<body>
+
+	<div class="section over-hide z-bigger" style="width:100%; margin: 0%;">
+		<input class="checkbox" type="checkbox" name="general" id="general" onclick="save()" checked style="display: none;">
+		
+		<div class="background-color" style="background-image: url('/static/header.png'); background-repeat: no-repeat; background-position:top; background-size: 45%;"></div>
+		<div class="section over-hide z-bigger">
+			<div class="container pb-5">
+				<div class="row justify-content-center pb-5">
+					<div class="col-12 pt-5">
+                        <br>
+                        <br>
+                        <br>
+                        
+						<p class="mb-4 pb-2">Select Your Meal Set: </p>
+					</div>
+					<div class="col-12 pb-5" >
+                        <form action="/order_no" method="POST" >
+                            <input class="checkbox-tools" type="radio" name="mcinput" id="tool-1" value="Big Mac">
+                            <label style="font-size: larger; font-weight: bolder;" class="for-checkbox-tools" for="tool-1">
+                                <i class='uil uil-line-alt'></i>
+                                Big Mac
+                                <br>
+                                <br>
+                            </label>
+                            <input class="checkbox-tools" type="radio" name="mcinput" id="tool-2" value="Big Mac Plus" >
+                            <label style="font-size: larger; font-weight: bolder;" class="for-checkbox-tools" for="tool-2">
+                                <i class='uil uil-vector-square'></i>
+                                Big Mac Plus
+                            </label>
+                            <br>
+                            <input class="checkbox-tools" type="radio" name="mcinput" id="tool-3" value="Big Mac Pro">
+                            <label style="font-size: larger; font-weight: bolder;" class="for-checkbox-tools" for="tool-3">
+                                <i class='uil uil-ruler'></i>
+                                Big Mac Pro
+                                <br>
+                                <br>
+                            </label>
+                            <input class="checkbox-tools" type="radio" name="mcinput" id="tool-4" value="Big Mac Pro Max">
+                            <label style="font-size: larger; font-weight: bolder;" class="for-checkbox-tools" for="tool-4">
+                                <i class='uil uil-crop-alt'></i>
+                                Big Mac Pro Max 
+                            </label>
+
+                            <div class="col-12 pt-5">
+                                <p class="mb-4 pb-2">Arrival Time:
+                                    <br> 
+                                    <input class="checkbox-tools for-checkbox-tools" type="range" id="arr_time" name="arr_time" min="0" max="60" value="15" oninput="this.nextElementSibling.value = this.value">
+                                    &nbsp;
+                                    <output class="mb-4 pb-2">15</output>
+                                    <span class="mb-4 pb-2">min</span>
+                                </p>
+                            </div>
+                            <input type="radio" checked value="App" name="method" style="display: none"></input>
+                            <button type="submit" class="btn btn-outline-secondary" style="font-weight: bold;">SUBMIT</button>&nbsp&nbsp
+                            <button type="reset" class="btn btn-outline-danger" style="font-weight: bold;">RESET</button>
+                        </form>
+					</div>
+                    <div class="col-12 pt-5">
+                        <p class="mb-4 pb-2" style="font-size: small; position: fixed; bottom: 0; right: 15px;"><span style="color:grey; font-weight: bolder;">{{ size }}</span>&nbsp;orders pending</p>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+		
+	<!-- Link to page
+	================================================== -->
+
+</body>
+</html>

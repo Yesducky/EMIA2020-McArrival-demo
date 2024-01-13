@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet"  href="{{url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>{{ title }}</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"  href="{{url_for('static', filename='style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <title>{{ title }}</title>
+</head>
+<body>
+	<div class="section over-hide z-bigger">
+		<input class="checkbox" type="checkbox" name="general" id="general">
+		<label class="for-checkbox" for="general"></label>
+		<div class="background-color"></div>
+		<div class="section over-hide z-bigger">
+			<div class="container pb-5">
+				<div class="row justify-content-center pb-5">
+					<div class="col-12 pt-5">
+						<p class="mb-4 pb-2">Last input: <span style="color:rgb(255, 93, 93); font-weight: bolder;">{{ mcinput }}</span></p>
+					</div>
+					<div class="col-12 pb-5">
+                        <form action="/form" method="POST" >
+                            <input class="checkbox-tools" type="radio" name="mcinput" id="tool-1" value="A">
+                            <label class="for-checkbox-tools" for="tool-1">
+                                <i class='uil uil-line-alt'></i>
+                                A
+                            </label>
+                            <input class="checkbox-tools" type="radio" name="mcinput" value="B" id="tool-2" >
+                            <label class="for-checkbox-tools" for="tool-2">
+                                <i class='uil uil-vector-square'></i>
+                                B
+                            </label>
+                            <br>
+                            <input class="checkbox-tools" type="radio" name="mcinput" id="tool-3" value="C">
+                            <label class="for-checkbox-tools" for="tool-3">
+                                <i class='uil uil-ruler'></i>
+                                C
+                            </label>
+                            <input class="checkbox-tools" type="radio" name="mcinput" id="tool-4" value="D">
+                            <label class="for-checkbox-tools" for="tool-4">
+                                <i class='uil uil-crop-alt'></i>
+                                D
+                            </label>
+                            <br>
+                            <button type="submit" class="btn btn-outline-secondary" style="font-weight: bold; font-size 30px;">SUBMIT</button>&nbsp&nbsp
+                            <button type="reset" class="btn btn-outline-danger" style="font-weight: bold; font-size 30px;">RESET</button>
+                        </form>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+		
+	<!-- Link to page
+	================================================== -->
+
+</body>
+</html>
+</body>
+</html>
